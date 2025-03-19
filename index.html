@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Kayla ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My World! 💙</h1>
+        <img src="kayla.jpeg" alt="My Picture" class="heart-img">
+        <p>Hello everyonee! Here’s a little bit about me. ✨</p>
+
+        <!-- Play My Song Button -->
+        <button class="song-button" onclick="playSong()">🎶 Click here to play my song! 🎶</button>
+        <audio id="mySong">
+            <source src="pawat.mp3" type="audio/mpeg">
+            </audio>
+
+<img src="cat.gif" alt="Cute GIF" class="cute-gif">
+
+
+    <div class="social-links">
+    <h2>✨ Follow Me! ✨</h2>
+    <a href="https://www.instagram.com/d0rayami?igsh=ZzljcjJsNjdkODg4" target="_blank" class="social-btn instagram">📸 Instagram</a>
+    <a href="https://www.tiktok.com/@kkayshe?_r=1&_d=ec6cge7d04e9dc&sec_uid=MS4wLjABAAAAFDmklO9KdFFvqquf5YCT4n-s-ZxOAW7R6yGSjqugu_-Oe1kMzlGaBbwGqswOelg_&share_author_id=7349099889466655750&sharer_language=id&source=h5_t&u_code=ed81k9l5b360a1&timestamp=1742307242&user_id=7349099889466655750&sec_user_id=MS4wLjABAAAAFDmklO9KdFFvqquf5YCT4n-s-ZxOAW7R6yGSjqugu_-Oe1kMzlGaBbwGqswOelg_&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7481704678423152389&share_link_id=e59e0499-b4d9-4a09-aae4-c35e16d8c3ed&share_app_id=1180&ugbiz_name=ACCOUNT&social_share_type=5&enable_checksum=1" target="_blank" class="social-btn tiktok">🎵 TikTok</a>
+</div>
+
+
+
+        <div class="fun-facts">
+            <h2>Fun Facts About Me 💡</h2>
+            <button onclick="revealFact(1)">🔹 My Favorite Hobby</button>
+            <p id="fact1" class="hidden">I LOVE watching movies 🌟</p>
+
+            <button onclick="revealFact(2)">🔹 My Signature scent and color</button>
+            <p id="fact2" class="hidden">My signature scent in strawberry🍓 and the color blue!</p>
+
+            <button onclick="revealFact(3)">🔹 My Dream</button>
+            <p id="fact3" class="hidden">I would love to become an engineer in the future! 👷🏻‍♀️📐</p>
+        </div>
+
+        <div class="countdown">
+    <h2>⏳ Countdown to My Birthday! 🎉</h2>
+    <p>Days left until my special event: <span id="countdownTimer"></span></p>
+</div>
+
+<div class="bible-verse-container">
+    <h2>Favourite Bible Verse👼</h2>
+    <button id="prevVerse">⬅️</button>
+    <p id="bibleVerse">"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future." - Jeremiah 29:11</p>
+    <button id="nextVerse">➡️</button>
+</div>
+
+
+    <div class="art-gallery">
+    <h2>🎨 My Mini Art Gallery 🖌️</h2>
+    <div class="gallery-container">
+        <img src="art1.jpeg" alt="Art 1">
+        <img src="art2.jpeg" alt="Art 2">
+        <img src="art3.jpeg" alt="Art 3">
+        <img src="art4.jpeg" alt="Art 4">
+    </div>
+</div>
+        
+        <!-- Idol Section -->
+        <div class="idol-box">
+            <h2>My Idol & Boyfriend: Ohm Pawat 💖</h2>
+            <img src="ohm.jpeg" alt="Ohm Pawat" class="ohm-img">
+            <p>Ohm Pawat is a super talented Thai actor known for his amazing roles in dramas! He has been my inspiration and motivation to become more confident and to love myself more! He reminds me that life is STILL WORTHY to live in🧡🐶</p>
+            <a href="https://en.wikipedia.org/wiki/Pawat_Chittsawangdee" target="_blank">Learn more about him! 🔗</a>
+        </div>
+
+        <div class="places-container">
+    <h2>🌍 Places I Want to Visit ✈️</h2>
+    <h3>Click to reveal WHY👇</h3>
+    <div class="postcard-grid">
+        <div class="postcard" onclick="flipCard(this)">
+            <div class="front">
+                <img src="seoul.jpg" alt="Seoul">
+                <p>Seoul, South Korea 🇰🇷</p>
+            </div>
+            <div class="back">
+                <p>The mix of tradition and modern city life fascinates me! Plus, K-fashion & K-pop! 🎶✨</p>
+            </div>
+        </div>
+
+        <div class="postcard" onclick="flipCard(this)">
+            <div class="front">
+                <img src="beijing.jpg" alt="Beijing">
+                <p>Beijing, China 🇨🇳</p>
+            </div>
+            <div class="back">
+                <p>Would love to see the Great Wall and experience authentic Chinese culture! 🏯🐉</p>
+            </div>
+        </div>
+
+        <div class="postcard" onclick="flipCard(this)">
+            <div class="front">
+                <img src="tokyo.jpg" alt="Tokyo">
+                <p>Tokyo, Japan 🇯🇵</p>
+            </div>
+            <div class="back">
+                <p>Neon lights, anime, cherry blossoms, and all the aesthetic cafés! 🍣🌸</p>
+            </div>
+        </div>
+
+        <div class="postcard" onclick="flipCard(this)">
+            <div class="front">
+                <img src="bangkok.jpg" alt="Bangkok">
+                <p>Bangkok, Thailand 🇹🇭</p>
+            </div>
+            <div class="back">
+                <p>The street food, night markets, and temples look so amazing! Plus, Thai actors! 😍🍜</p>
+            </div>
+        </div>
+
+        <div class="postcard" onclick="flipCard(this)">
+            <div class="front">
+                <img src="newyork.jpg" alt="New York">
+                <p>New York, USA 🇺🇸</p>
+            </div>
+            <div class="back">
+                <p>Times Square, Broadway, and living my Gossip Girl dream! 🏙️🎭</p>
+            </div>
+        </div>
+
+        <div class="postcard" onclick="flipCard(this)">
+            <div class="front">
+                <img src="paris.jpg" alt="Paris">
+                <p>Paris, France 🇫🇷</p>
+            </div>
+            <div class="back">
+                <p>City of love, art, and pastries! Eiffel Tower & Louvre are must-visits! 🥐🎨</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <section id="movie-gallery">
+    <h2>🎥 My Movie Recommendations 🎥</h2>
+    <div class="gallery-container">
+        <button class="scroll-btn left" onclick="scrollGallery(-1)">⬅</button>
+        <div class="gallery">
+            <img src="movie1.jpg" alt="Movie 1">
+            <img src="movie2.jpg" alt="Movie 2">
+            <img src="movie3.jpg" alt="Movie 3">
+            <img src="movie4.jpg" alt="Movie 4">
+            <img src="movie5.jpg" alt="Movie 5">
+            <img src="movie6.jpg" alt="Movie 6">
+            <img src="movie7.jpg" alt="Movie 7">
+            <img src="movie8.jpg" alt="Movie 8">
+            <img src="movie9.jpg" alt="Movie 9">
+            <img src="movie10.jpg" alt="Movie 10">
+        </div>
+        <button class="scroll-btn right" onclick="scrollGallery(1)">➡</button>
+    </div>
+</section>
+
+<section class="book-section">
+    <h2>📖 My Book Recommendations 📖</h2>
+    <h3>Click to reveal each book's synopsis</h3>
+    <div class="book-container">
+        <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book1.jpg" alt="Book 1">
+                </div>
+                <div class="book-back">
+                    <h3>Tentang Kamu</h3>
+                    <p>A heartwarming journey uncovering a mysterious woman’s past, filled with love, loss, and unforgettable memories.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book2.jpg" alt="Book 2">
+                </div>
+                <div class="book-back">
+                    <h3>Twenty-Four Eyes</h3>
+                    <p>A touching Japanese classic about a dedicated teacher and her students during a time of war and change.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book3.jpg" alt="Book 3">
+                </div>
+                <div class="book-back">
+                    <h3>My Youth</h3>
+                    <p>A nostalgic story of friendship, dreams, and the bittersweet moments that define our teenage years.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book4.jpg" alt="Book 4">
+                </div>
+                <div class="book-back">
+                    <h3>Loving the Wounded Soul</h3>
+                    <p>A deep and emotional book that teaches us about mental health, self-love, and healing from within.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book5.jpg" alt="Book 4">
+                </div>
+                <div class="book-back">
+                    <h3>Hello</h3>
+                    <p>A beautifully written novel exploring the power of first encounters, fate, and meaningful connections.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book6.jpg" alt="Book 4">
+                </div>
+                <div class="book-back">
+                    <h3>Biru Pram Frasa</h3>
+                    <p>A poetic and soulful book about love, longing, and the beauty of unspoken words.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book7.jpg" alt="Book 4">
+                </div>
+                <div class="book-back">
+                    <h3>The Architecture of Love</h3>
+                    <p>A romantic novel that blends architecture, travel, and love, taking readers on a journey of self-discovery.</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book8.jpg" alt="Book 4">
+                </div>
+                <div class="book-back">
+                    <h3>Hujan</h3>
+                    <p>A heart-tugging sci-fi romance about memories, destiny, and the meaning of letting go.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book9.jpg" alt="Book 4">
+                </div>
+                <div class="book-back">
+                    <h3>Milea: Suara Dilan</h3>
+                    <p>A fresh perspective on the famous love story of Dilan & Milea, told through Dilan’s own words.</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="book-card">
+            <div class="book-inner">
+                <div class="book-front">
+                    <img src="book10.jpg" alt="Book 4">
+                </div>
+                <div class="book-back">
+                    <h3>Mirai</h3>
+                    <p>A magical and touching adventure about family, time travel, and the beauty of childhood.</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+</section>
+
+
+
+        <!-- Love Box -->
+        <div class="love-box">
+            <h2>Write Something Sweet About Me 💌</h2>
+            <textarea id="message" placeholder="Say something nice..."></textarea>
+            <button onclick="saveMessage()">Send 💙</button>
+        </div>
+
+      
+<div class="surprise-section">
+    <button onclick="showSurprise()">🎁 Click for a Surprise! 🎁</button>
+    <div id="surprise" class="hidden">
+        <img src="giphy.gif" alt="Surprise GIF" class="surprise-gif">
+    </div>
+</div>
+
+       
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+

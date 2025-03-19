@@ -1,0 +1,431 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E3F2FD; /* Light Blue */
+    color: #0D47A1; /* Navy */
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden; /* Fixes scrolling issue */
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Heart-Shaped Profile Picture */
+.heart-img {
+    width: 200px; /* Adjust the size */
+    height: 200px;
+    clip-path: polygon(50% 15%, 85% 15%, 100% 40%, 50% 100%, 0% 40%, 15% 15%);
+    object-fit: cover;
+    border: 4px solid #0D47A1; /* Navy outline */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart-img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+.ohm-img {
+    width: 150px;  /* Adjust the size */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Heading Styles */
+h1, h2 {
+    color: #0D47A1;
+    text-shadow: 2px 2px 5px rgba(0, 71, 133, 0.2);
+}
+
+/* Buttons */
+button {
+    background-color: #0D47A1;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #1565C0;
+    transform: scale(1.05);
+}
+
+/* Hidden Answers */
+.hidden {
+    display: none;
+    font-weight: bold;
+    color: #0D47A1;
+}
+
+/* Textarea (Message Box) */
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 2px solid #0D47A1;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    background-color: #F0F8FF;
+}
+
+/* Floating Decorations */
+.floating-decoration {
+    position: fixed;
+    top: -50px;
+    font-size: 25px;
+    opacity: 0.8;
+    animation: floatUp 4s linear infinite;
+    pointer-events: none;
+}
+
+/* Floating Animation */
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+/* Links */
+a {
+    color: #1565C0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Countdown Timer */
+.countdown {
+    margin-top: 20px;
+    font-size: 18px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Social Links */
+.social-links {
+    margin-top: 30px;
+    background: #E3F2FD;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn {
+    display: inline-block;
+    background: #0D47A1;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.social-btn:hover {
+    background: #1976D2;
+}
+
+.cute-gif {
+    width: 150px; /* Adjust size */
+    display: block;
+    margin: 20px auto; /* Adds space above & below */
+    border-radius: 10px; /* Cute rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.hidden {
+    display: none;
+}
+
+.surprise-gif {
+    width: 180px; /* Adjust size */
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.art-gallery {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.gallery-container img {
+    width: 120px; /* Adjust size */
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bible-verse-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bible-verse-container button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.bible-verse-container button:hover {
+    background-color: #005fa3;
+}
+
+#movie-gallery {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+/* Movie Posters */
+.gallery img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    background-color: #ff75a0;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Left Button */
+.scroll-btn.left {
+    left: -50px;  /* Moves it to the left */
+}
+
+/* Right Button */
+.scroll-btn.right {
+    right: -50px; /* Moves it to the right */
+}
+
+.scroll-btn:hover {
+    background-color: #ff3f78;
+}
+.book-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+.book-card {
+    width: 150px;
+    height: 220px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.book-card:hover {
+    transform: rotateY(180deg);
+}
+
+.book-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.book-front, .book-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-back {
+    background: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transform: rotateY(180deg);
+}
+
+.places-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.postcard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.postcard {
+    width: 180px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.postcard .front, .postcard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.postcard .front img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.postcard .front p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.postcard .back {
+    transform: rotateY(180deg);
+    background-color: #E3F2FD;
+    color: #0D47A1;
+    font-size: 14px;
+}
+
+.postcard.flip .front {
+    transform: rotateY(180deg);
+}
+
+.postcard .front {
+    background: #D6EAF8; /* Soft pastel blue */
+    color: #154360;
+}
+
+.postcard .back {
+    background-color: #5DADE2; /* Deeper blue */
+    color: white;
+}
+
+.postcard.flip .back {
+    transform: rotateY(0);
+}
